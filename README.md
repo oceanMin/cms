@@ -8,7 +8,7 @@ Nodejs学习过程中的一些总结，可[点击这里](https://github.com/minj
 * [快速开始](README.md)
   * [快速开始](快速开始.md)
 * [模块](README.md)
-  * [express商品管理系统介绍](模块/express商品管理系统介绍.md)
+  * [express商品管理系统介绍](模块/introduce.md)
   * [框架搭建、ejs 、express.static静态页面搭建](框架搭建.md)
   * [商品管理系统查询mongodb数据库登录功能](查询mongodb数据库登录功能.md)
   * [登录功能、退出登录功能](登录功能.md)
