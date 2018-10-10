@@ -47,3 +47,7 @@ node app.js
 
 index
 
+### 直接运行本项目
+访问[http://localhost:3000/admin/login](http:localhost:3000/admin/login)，效果如下
+![router-rsult-01](../assets/yhdl.png)
+
