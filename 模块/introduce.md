@@ -15,3 +15,12 @@
   6.前台显示后台增加的数据
 
 ### 页面展示
+![route-result-01](../assets/yhdl.png)
+
+![route-result-02](../assets/splb.png)
+
+![route-result-03](../assets/xzsp.png)
+
+![route-result-04](../assets/bjsp.png)
+
+![route-result-05](../assets/yhlb.png)
