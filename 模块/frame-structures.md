@@ -19,7 +19,7 @@ npm install express ejs --save-dev
 
 新建app.js文件，并输入以下代码：
 
-```
+```js
 //安装express
 //安装ejs
 var express=require('express');
