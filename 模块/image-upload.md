@@ -119,4 +119,4 @@ app.post('/doProductAdd',function(req,res){
 </html>
 ```
 
-点击[http://localhost:3000/admin/product/add](http://localhost:3000/admin/product/add)浏览效果。
+点击[http://localhost:3000/productadd](http://localhost:3000/productadd)浏览效果。
