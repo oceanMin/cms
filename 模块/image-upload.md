@@ -40,9 +40,9 @@ app.post('/doProductAdd',function(req,res){
     form.parse(req, function(err, fields, files) {
 
         //获取提交的数据以及图片上传成功返回的图片信息
-        //
+        
         //console.log(fields);  /*获取表单的数据*/
-        //
+        
         //console.log(files);  /*图片上传成功返回的信息*/
         var title=fields.title[0];
         var price=fields.price[0];
@@ -66,25 +66,6 @@ app.post('/doProductAdd',function(req,res){
     });
 })
 
-app.get('/productedit',function(req,res){
-
-    //获取get传值 id
-
-    var id=req.query.id;
-
-    console.log(id);
-
-    //去数据库查询这个id对应的数据     自增长的id 要用{"_id":new DB.ObjectID(id)
-
-    DB.find('product',{"_id":new DB.ObjectID(id)},function(err,data){
-
-        //console.log(data);
-
-        res.render('productedit',{
-            list:data[0]
-        });
-    });
-})
 ```
 
 新增商品页面如下：
@@ -121,63 +102,6 @@ app.get('/productedit',function(req,res){
                                 <li>
                                     商品描述:
                                     <textarea name="description" id="" cols="60" rows="8"></textarea>
-                                </li>
-                                <li>
-                                    <br/>
-                                    <button type="submit" class="btn btn-default">提交</button>
-                                </li>
-                            </ul>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-</body>
-</html>
-```
-
-编辑商品页面如下：
-
-**views/productedit.ejs**
-
-```ejs
-<%- include public/header.ejs%>
-
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-sm-2">
-            <%- include public/aslideleft.ejs%>         
-        </div>
-        <div class="col-sm-10">
-            <ol class="breadcrumb">
-                <li class="active">商品管理
-                </li>
-                <li class="active">商品列表
-                </li>
-            </ol>
-            <div class="panel panel-default">
-              
-			    <div class="panel-heading">
-                  编辑商品
-                </div>
-                <div class="panel-body">
-                    <div class="table-responsive input-form">
-                        <form action="/doAdd" method="post">
-                            <ul>
-                                <li>  商品名称: <input type="text" name="title" value="<%=list.title%>"/></li>
-
-                                <li>  商品图片: <input type="file" name="pic"/>
-                                    <br/> <br/>
-                                   　　　　 <img src="<%=list.pic%>" width="100"/>
-                                    <br/> <br/>
-                                </li>
-                                <li>  商品价格: <input type="text" name="price" value="<%=list.price%>"/></li>
-                                <li>  商品邮费: <input type="text" name="fee"  value="<%=list.fee%>"/></li>
-                                <li>
-                                    商品描述:
-                                    <textarea name="description" id="" cols="60" rows="8"><%=list.description%></textarea>
                                 </li>
                                 <li>
                                     <br/>
