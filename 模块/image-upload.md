@@ -21,6 +21,8 @@
 ```
 
  4.html页面form 表单要加入` enctype="multipart/form-data"`
+ 
+ 首先，在根目录新建`upload`文件夹，用来保存上传的图片
 
 `app.js`修改代码如下：
 
@@ -118,5 +120,5 @@ app.post('/doProductAdd',function(req,res){
 </body>
 </html>
 ```
-
+> 注意：新增商品页面 `<form>` 表单中需要加入这段代码 `enctype="multipart/form-data"`，否则无法上传图片。
 点击[http://localhost:3000/productadd](http://localhost:3000/productadd)浏览效果。
