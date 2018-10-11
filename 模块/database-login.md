@@ -20,7 +20,7 @@
 
 继续在app.js文件中添加如下代码：
 
-```
+```js
 //安装body-parser中间件
 //获取post
 var bodyParser = require('body-parser');
@@ -76,7 +76,9 @@ app.post('/doLogin',function(req,res){
 
 在views/login.ejs页面键入以下代码：
 
-```
+**views/login.ejs**
+
+```ejs
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
