@@ -2,7 +2,7 @@
 
 图片上传插件的使用
 
- 1.`sh  npm install multiparty`
+ 1.`  npm install multiparty`
 
  2.`  var multiparty = require('multiparty');`
 
